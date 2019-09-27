@@ -6,6 +6,8 @@ import { EmptyRouteComponent } from './empty-route/empty-route.component';
 
 
 const routes: Routes = [
+  { path: 'paginas', loadChildren: () => import('./paginas/paginas.module').then(m => m.PaginasModule)},
+  { path: '', redirectTo: '/paginas/dashboard', pathMatch: 'full' },
   { path: '**', component: EmptyRouteComponent }
 ];
 
