@@ -20,13 +20,14 @@
   <script src="https://cdn.jsdelivr.net/npm/zone.js/dist/zone.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@1.8.0/dist/import-map-overrides.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/5.0.0/system.min.js"></script>
+  <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/jquery/jquery.min.js"></script>
+  <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://adminlte.io/themes/dev/AdminLTE/dist/js/adminlte.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/5.0.0/extras/amd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/5.0.0/extras/named-exports.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/5.0.0/extras/named-register.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/5.0.0/extras/use-default.min.js"></script>
-  <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/jquery/jquery.min.js"></script>
-  <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://adminlte.io/themes/dev/AdminLTE/dist/js/adminlte.min.js"></script>
+ 
 </head>
 
 <body>
@@ -35,7 +36,7 @@
       singleSpa.registerApplication(
         'template',
         () => System.import('template'),
-        location => location.pathname.startsWith('/template')
+        location => location.pathname.startsWith('/')
       );
       singleSpa.start();
     })
