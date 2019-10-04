@@ -2,3 +2,7 @@
 
 @import '~admin-lte/dist/css/adminlte.css';
 @import '~admin-lte/plugins/fontawesome-free/css/all.min.css';
+
+.content-wrapper{
+    min-height:0vh!important
+}
